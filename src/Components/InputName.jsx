@@ -6,10 +6,11 @@ const InputName = () => {
   const [name, setName] = useState("");
 
   return (
-    <div>
-      <div>
+    <div className="input_parent">
+      <div className="input_container">
         <h2 className="input_heading">Hello</h2>
         <Input
+        className="input_element"
           value={name}
           placeholder="Name"
           onInput={(e) => setName(e.target.value)}

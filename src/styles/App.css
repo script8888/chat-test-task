@@ -8,4 +8,26 @@
 body {
 }
 
-.input_heading {}
+.input_parent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input_container {
+  background-color: #f7f7f7d6;
+  padding: 8em;
+}
+
+.input_heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.input_element {
+  border: 1.2px solid #000 !important;
+  margin-bottom: 10px;
+}
