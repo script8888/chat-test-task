@@ -10,7 +10,7 @@ const InputName = () => {
       <div className="input_container">
         <h2 className="input_heading">Hello</h2>
         <Input
-        className="input_element"
+          className="input_element"
           value={name}
           placeholder="Name"
           onInput={(e) => setName(e.target.value)}
@@ -18,7 +18,7 @@ const InputName = () => {
         <Button
           //   isLoading
           //   loadingText="loading"
-          colorScheme="blue"
+          colorScheme="teal"
         >
           Proceed
         </Button>
