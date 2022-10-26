@@ -1,9 +1,17 @@
 import { useState } from "react";
 import { Input } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
+import {useStoreActions } from "easy-peasy";
 
 const InputName = () => {
+  const saveName = useStoreActions((action) => action.input.setName);
+  const setLoggedIn = useStoreActions((action) => action.input.setIsLoggedIn);
   const [name, setName] = useState("");
+
+  const login = () => {
+    setLoggedIn(true);
+    saveName(name);
+  };
 
   return (
     <div className="input_parent">
@@ -18,6 +26,7 @@ const InputName = () => {
         <Button
           //   isLoading
           //   loadingText="loading"
+          onClick={login}
           colorScheme="teal"
         >
           Proceed
