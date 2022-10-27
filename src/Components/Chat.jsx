@@ -8,12 +8,17 @@ const Chat = () => {
   return (
     <div className="chat_parent">
       <div className="chat_container">
-        <div className="chat_message_container" id="chat-box">
-            <div className="chat_messageParent">
-              <div className="chat_message_user">user</div>
-              <div className="chat_message_text">message</div>
-            </div>
+        <div className="chat_message_container">
+          <div className="chat_messageGrandParent">
+              <div
+                className="chat_messageParent"
+              >
+                <div className="chat_message_user">name</div>
+                <div className="chat_message_text">user</div>
+              </div>
+            ))}
           </div>
+        </div>
 
         <div className="chat_inputParent">
           <Input
